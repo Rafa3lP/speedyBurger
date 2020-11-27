@@ -1,0 +1,120 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+body {
+    background-color: #E81111;/*fallback para o gradiente*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4E0505), color-stop(75%, #E81111), to(#4E0505));
+    background-image: -o-linear-gradient(#4E0505, #E81111 75%, #4E0505);
+    background-image: linear-gradient(#4E0505, #E81111 75%, #4E0505);
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+/*nav, header, main {
+    border: 2px solid black;
+}*/
+.text-center{
+    text-align: center;
+}
+
+.logo{
+    margin: 3em 0;
+    text-align: center;
+}
+
+.logo-text{
+    color: #fff;
+    font-size: 1.6em;
+}
+
+nav {
+    margin-bottom: 2em;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.nav-link {
+    display: block;
+    margin-right: 1.5em;
+    padding: .5em 1em;
+    border: 2px solid transparent;
+    color: #fff;
+    font-size: 1.3em;
+    -webkit-transition: border-bottom-color .5s linear;
+    -o-transition: border-bottom-color .5s linear;
+    transition: border-bottom-color .5s linear;
+}
+
+.nav-link:hover{
+    border-bottom-color: white;
+}
+
+.active{
+    color: #ff0;
+}
+
+main{
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 10px -5px 15px black;
+            box-shadow: 10px -5px 15px black;
+    border-radius: .2em;
+    min-height: 500px; 
+    height:auto !important; 
+    height: 500px; 
+}
+
+.social {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.social li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.social a {
+    display: block;
+    color: #fff;
+    font-size: 1.8em;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+.social a:hover{
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+}

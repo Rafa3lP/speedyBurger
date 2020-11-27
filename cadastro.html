@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael de Andrade Prenholato, Gabriel Scaramussa, Elder Fernando de Souza Rodrigues">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="shortcut icon" href="img/geral/speedyburger_icon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9711238f2d.js" crossorigin="anonymous"></script>
+    <title>SpeedyBurger - Pedir</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/geral/logo.png" width="170px" alt="SpeedyBurger Logo">
+            <div class="logo-text">SpeedyBurger</div>
+        </div>
+        <span class="nav-icon">
+            <i class="fa fa-bars"></i>
+        </span>
+        <nav class="hide">
+            <ul>
+                <li><a class="nav-link" href="home.html">Home</a></li>
+                <li><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+                <li><a class="nav-link active" href="cadastro.html">Pedir</a></li>
+                <li><a class="nav-link" href="sobre.html">Sobre nós</a></li>
+                <li><a class="nav-link" href="nossaslojas.html">Nossas lojas</a></li>
+                <li><a class="nav-link" href="faleconosco.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="text-center">
+            <h1 class="text-center">Cadastro</h1>
+        </div>
+            <form name="cadForm" action="pedido.js" method="POST" class="form">
+
+                <div class="form-row">
+                    <label for="cadNome">Nome*:</label>
+                    <input type="text" name="nome" id="cadNome" placeholder="Seu nome aqui" required/>
+                </div>
+                <div class="form-row">
+                    <label for="cadRua">Rua*:</label>
+                    <input type="text" name="rua" id="cadRua" placeholder="Sua rua aqui" required/>
+                </div>
+                <div class="form-row">
+                    <label for="cadCidade">Cidade*:</label>
+                    <input type="text" name="cidade" id="cadCidade" placeholder="Sua cidade aqui" required/>
+                </div>
+                <div class="form-row">
+                    <label for="cadEstado">Estado*:</label>
+                    <input type="text" name="estado" id="cadEstado" placeholder="Seu estado aqui" required/>
+                </div>
+                <div class="form-row">
+                    <label for="cadCep">CEP*:</label>
+                    <input type="text" name="cep" id="cadCep" placeholder="Seu CEP no formato 00000-000" pattern="[0-9]{5}-[0-9]{3}$" maxlength="9" required/>
+                </div>
+                <div class="form-row">
+                    <label for="cadEmail">E-mail*:</label>
+                    <input type="email" name="email" id="cadEmail" placeholder="seuemail@dominio.com" required/>
+                </div>
+                <div class="form-row">
+                    <label for="cadCpf">CPF*:</label>
+                    <input type="text" name="cpf" placeholder="Seu CPF no formato 000.000.000-00" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$" maxlength="14" required>
+                </div>
+                <div class="form-row">
+                    <label for="cadEstCivil">Estado Civil:</label> 
+                    <select name="estCivil" id="cadEstCivil">
+                        <option value="0">Selecione...</option>
+                        <option value="S">SOLTEIRO</option> 
+                        <option value="C">CASADO</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div>Sexo:</div>
+                    <label>
+                        MASCULINO
+                        <input type="radio" name="sexo" value="M" id="cadSexM">
+                    </label>
+                    <label>
+                        FEMININO
+                        <input type="radio" name="sexo" value="F" id="cadSexF"> 
+                    </label> 
+                </div>
+                <div class="form-row">
+                    <label for="cadObs">Observação:</label>
+                    <textarea name="obs" id="cadObs" placeholder="Se for necessário, insira alguma observação aqui"></textarea>
+                </div>
+                <div class="form-row form-control">
+                    <button class="btn" type="submit">Enviar</button>
+                    <button class="btn" type="reset">Limpar</button>
+                </div>
+        </form>
+    </main>
+    <footer>
+        <ul class="social">
+            <li><a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="mailto:speedyburger@dominio.com"><i class="far fa-envelope"></i></a></li>
+            <li><a href=" https://api.whatsapp.com/send?phone=SpeedyBurger&text=Olá, desejo fazer um pedido!"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

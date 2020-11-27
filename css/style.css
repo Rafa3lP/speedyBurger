@@ -127,8 +127,10 @@ footer {
 
 
 @media screen and (max-width: 768px){
-    .logo{
+    header {
         background-color: #4E0505;
+    }
+    .logo{
         text-align: left;
         margin: 1em .5em;
         position: relative;

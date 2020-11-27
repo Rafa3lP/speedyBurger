@@ -1,2 +1,2 @@
 # speedyBurger
-Trabalho de fundamentos de programação web
+:bulb:Trabalho de fundamentos de programação web

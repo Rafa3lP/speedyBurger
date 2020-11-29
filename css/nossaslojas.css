@@ -1,0 +1,76 @@
+hr {
+    display: block;
+    margin: 2em 0;
+    clear: both;
+}
+
+.local {
+    width: 85%;
+    overflow: auto;
+    margin: 1em auto;
+}
+
+.local:last-child {
+    margin-bottom: 4em;
+}
+
+.local-map {
+    background-color: #ccc;
+    width: 35%;
+    height: 12em;
+    float: left;
+}
+
+.local-desc {
+    width: 65%;
+    box-sizing: border-box;
+    padding-left: 1.3em;
+    float: left;
+}
+
+.local-desc p {
+    font-size: .8em;
+}
+
+.local-desc address {
+    margin: 1em 0;
+    font-style: normal;
+    font-size: .8em;
+}
+
+.local-title {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.local-btn {
+    background-color: #E81111;
+    float: right;
+    border-radius: 2px;
+    color:#FFF;
+    padding: .5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.local-btn:hover {
+    background-color: #e72c2c;
+}
+
+@media screen and (max-width: 768px){
+    .local-map {
+        width: 100%;
+    }
+
+    .local-desc {
+        width: 100%;
+        padding-left: .5em;
+    }
+
+    .local-title {
+        margin-top: 1.3em;
+    }
+    
+}
+

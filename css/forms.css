@@ -1,10 +1,9 @@
 .form {
-    /*border: 1px solid black;*/
     width: 70%;
     margin: 3em auto;
 }
 
-.form input[type=text], .form input[type=email], .form textarea, .form select {
+.form input[type=text], .form input[type=email], .form input[type=date], .form textarea, .form select {
     width: 100%;
     padding: 1em;
     margin: .5em 0;
@@ -14,10 +13,12 @@
     box-sizing: border-box;
     font-size: 1em;
     font-family: inherit;
+        -webkit-appearance: none;
 }
 
-.form input[type=radio] {
-
+.form input[type=radio] label {
+    display: block;
+    margin: .5em 0;
 }
 
 .form textarea {

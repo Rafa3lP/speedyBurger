@@ -1,0 +1,56 @@
+main {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.col-2:first-child {
+    box-sizing: border-box;
+    border-right: 1px dashed #ccc;
+}
+
+.logo-index{
+    margin: 3em 0;
+    text-align: center;
+}
+
+.logo-index img {
+    transition: transform .2s linear;
+}
+
+.logo-index img:hover {
+    transform: translateY(-5px);
+}
+
+.logo-text-index{
+    color: #f00;
+    font-size: 1.6em;
+}
+
+.logo-index:visited {
+    color: initial;
+}
+
+.developer {
+    display: block;
+    margin-bottom: 1.3em;
+    color: inherit;
+}
+
+.developer-img{
+    vertical-align: middle;
+    margin-right: 1em;
+    width: 5em;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 768px){
+    main {
+        margin: 0;
+    }
+
+    .col-2:first-child {
+        border-color: transparent;
+    }
+}

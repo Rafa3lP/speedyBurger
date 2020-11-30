@@ -1,48 +1,55 @@
 .search {
-    text-align: center;
-}
-
-.search-bar {
-    margin: 2em auto;
-    border: solid 1px #ccc;
-    border-radius: 2px;
-    width: 420px;
-    height: 35px;
+    position: relative;
 }
 
 .search-icon {
+    color: #ccc;
+    font-size: 1.3em;
+    padding: .5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.busca {
+    margin: 2em auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.txtbusca {
+    position: relative;
+    border: 0.06em solid #ccc;
+    border-right: none;
+    border-radius: .2em 0 0 .2em;
+    background: transparent;
+    width: 20em;
+    height: 2em;
+    margin:0 auto;
+    padding: .3em .3em .3em 3em;
     float:left;
-    margin: 5px;
-    font-size: 25px;
-    color: #bbb;
-}
-
-.search-text {
-    float: left;
-    background-color: transparent;
-    margin: 0;
-    padding: 1px 5px 1px 1px;
-    font-size: 18px;
-    border: none;
-    height: 35px;
-    width: 270px;
-}
-
-.search-text:focus {
+    line-height: 2em;
+    font-size: .83em;
     outline: none;
 }
-
-#search-btn {
+.btnBusca {
     background-color: #E81111;
-    float: left;
-    width: 109px;
-    height: 35px;
-    border: none;
-    border-radius: 0 2px 2px 0;
-    color: #fff;
-    outline: none;
+    color:#FFF;
+    margin: 0 auto;
+    padding: .56em 1em;
+    border: 0 none;
+    border-radius: 0 .2em .2em 0;
+        -webkit-appearance: none;/*impede formatação padrão do botão no iphone*/
+    font-size: 1em;
     cursor: pointer;
-    
+}
+.btnBusca:hover {
+    background-color: #e72c2c;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
 }
 
 .filter label{
@@ -90,6 +97,10 @@
     transform: translateX(46.5px);
 }
 
+.cardapio-sub {
+    width: 20em;
+}
+
 .containerproducts {
     display: flex;
     flex-direction: row;
@@ -101,18 +112,17 @@
 }
 
 .card{
-    position: relative;
     background-color: #f2f2f2;
     margin: 0 1.5em 1em 0;
-    width: 200px;
-    height: 380px;
+    width: 14em;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     overflow: hidden;
 }
 
 .card-img{
     width: 100%;
-    height: 155px;
+    height: 10em;
 }
 
 .card-img img {
@@ -127,9 +137,12 @@
 
 .card-content h4{
     margin: 0;
+    height: 2em;
 }
 
 .card-content p{
+    height: 8em;
+    min-height: 8em;
     font-size: .8em;
     overflow: hidden;
 }
@@ -137,7 +150,65 @@
 .card-price {
     color: #0f0;
     font-size: 1.3em;
-    position: absolute;
-    bottom: .5em;
-    left: 32%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+
+    .txtbusca {
+        width: 15em;
+    }
+
+    .filter {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filter label{
+        margin-bottom: 1.5em;
+    }
+
+    .card{
+        margin-right: 0;
+        width: 16em;
+    }
+
+    .card-img{
+        width: 100%;
+        height: 12em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .txtbusca {
+        width: 13em;
+        font-size: .88em;
+    }
+
+    .cardapio-sub {
+        width: 15em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .search-icon {
+        font-size: .975em;
+        padding: .375em;
+    }
+    
+    .txtbusca {
+        border: 0.045em solid #ccc;
+        border-radius: .15em 0 0 .15em;
+        width: 15em;
+        height: 1.5em;
+        padding: .225em .225em .225em 2.25em;
+        line-height: 2em;
+        font-size: .7em;
+    }
+    .btnBusca {
+        padding: .42em .75em;
+        border-radius: 0 .15em .15em 0;
+        font-size: .75em;
+    }
 }

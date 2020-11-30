@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael de Andrade Prenholato, Gabriel Scaramussa, Elder Fernando de Souza Rodrigues">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/forms.css">
+    <link rel="shortcut icon" href="img/geral/speedyburger_icon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9711238f2d.js" crossorigin="anonymous"></script>
-    <title>SpeedyBurger</title>
+    <title>SpeedyBurger - Pedir</title>
 </head>
 <body>
     <header>
@@ -14,7 +16,10 @@
             <img src="img/geral/logo.png" width="170px" alt="SpeedyBurger Logo">
             <div class="logo-text">SpeedyBurger</div>
         </div>
-        <nav>
+        <span class="nav-icon">
+            <i class="fa fa-bars"></i>
+        </span>
+        <nav class="hide">
             <ul>
                 <li><a class="nav-link" href="home.html">Home</a></li>
                 <li><a class="nav-link" href="cardapio.html">Cardápio</a></li>
@@ -28,6 +33,10 @@
     <main>
         <div class="text-center">
             <h1 class="text-center">Cadastro</h1>
+            <p>
+                Para que você faça seu pedido por aqui precisamos que preencha o cadastro a seguir.<br> 
+                Se preferir, você pode fazer o seu pedido via whatsapp clicando no ícone ao final da página!
+            </p>
         </div>
             <form name="cadForm" action="pedido.js" method="POST" class="form">
 
@@ -49,15 +58,31 @@
                 </div>
                 <div class="form-row">
                     <label for="cadCep">CEP*:</label>
-                    <input type="text" name="cep" id="cadCep" placeholder="Seu CEP no formato 00000-000" pattern="[0-9]{5}-[0-9]{3}$" maxlength="9" required/>
+                    <input type="text" name="cep" id="cadCep" placeholder="Seu CEP no formato xxxxx-xxx" pattern="[0-9]{5}-[0-9]{3}$" maxlength="9" required/>
+                </div>
+
+                <div class="form-row">
+                    <label for="cadTel">Telefone Residencial*:</label>
+                    <input type="text" name="tel" id="cadTel" placeholder="Seu telefone residencial no formato (xx) xxxxx-xxxx" pattern="\([0-9]{2}\)[\s][0-9]{4,5}-[0-9]{4}" required/>
+                </div>
+
+                <div class="form-row">
+                    <label for="cadTel">Profissão:</label>
+                    <input type="text" name="prof" id="cadProf" placeholder="Diga sua profissão aqui"/>
+                </div>
+
+                <div class="form-row">
+                    <label for="cadTel">Data de nascimento*:</label>
+                    <input type="date" name="dataNasc" id="cadDataNasc" min="1900-01-01" max="2020-12-30"/>
+                </div>
+
+                <div class="form-row">
+                    <label for="cadCpf">CPF*:</label>
+                    <input type="text" name="cpf" placeholder="Seu CPF no formato xxx.xxx.xxx-xx" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$" maxlength="14" required>
                 </div>
                 <div class="form-row">
                     <label for="cadEmail">E-mail*:</label>
                     <input type="email" name="email" id="cadEmail" placeholder="seuemail@dominio.com" required/>
-                </div>
-                <div class="form-row">
-                    <label for="cadCpf">CPF*:</label>
-                    <input type="text" name="cpf" placeholder="Seu CPF no formato 000.000.000-00" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$" maxlength="14" required>
                 </div>
                 <div class="form-row">
                     <label for="cadEstCivil">Estado Civil:</label> 
@@ -70,13 +95,13 @@
                 <div class="form-row">
                     <div>Sexo:</div>
                     <label>
-                        <input type="radio" name="sexo" value="M" id="cadSexM">
                         MASCULINO
+                        <input type="radio" name="sexo" value="M" id="cadSexM">
                     </label>
                     <label>
+                        FEMININO
                         <input type="radio" name="sexo" value="F" id="cadSexF"> 
-                        FEMININO 
-                    </label>
+                    </label> 
                 </div>
                 <div class="form-row">
                     <label for="cadObs">Observação:</label>
@@ -97,5 +122,6 @@
             <li><a href=" https://api.whatsapp.com/send?phone=SpeedyBurger&text=Olá, desejo fazer um pedido!"><i class="fab fa-whatsapp"></i></a></li>
         </ul>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

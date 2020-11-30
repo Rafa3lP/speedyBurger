@@ -1,9 +1,3 @@
-hr {
-    display: block;
-    margin: 2em 0;
-    clear: both;
-}
-
 .local {
     width: 85%;
     overflow: auto;

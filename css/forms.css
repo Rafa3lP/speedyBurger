@@ -16,9 +16,8 @@
     font-family: inherit;
 }
 
-.form input[type=radio] label {
-    display: block;
-    margin: .5em 0;
+.form input[type=radio] {
+
 }
 
 .form textarea {

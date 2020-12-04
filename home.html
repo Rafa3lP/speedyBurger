@@ -2,11 +2,14 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="author" content="Rafael de Andrade Prenholato, Gabriel Scaramussa, Elder Fernando de Souza Rodrigues">
+    <link rel="stylesheet" href="public/bootstrap40/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="img/geral/speedyburger_icon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9711238f2d.js" crossorigin="anonymous"></script>
+    <script src="scripts/detectaie.js"></script>
     <title>SpeedyBurger - Home</title>
 </head>
 <body>
@@ -20,17 +23,68 @@
         </span>
         <nav class="hide">
             <ul>
-                <li><a class="nav-link active" href="home.html">Home</a></li>
-                <li><a class="nav-link" href="cardapio.html">Cardápio</a></li>
-                <li><a class="nav-link" href="cadastro.html">Pedir</a></li>
-                <li><a class="nav-link" href="sobre.html">Sobre nós</a></li>
-                <li><a class="nav-link" href="nossaslojas.html">Nossas lojas</a></li>
-                <li><a class="nav-link" href="faleconosco.html">Contato</a></li>
+                <li><a class="navbar-link ativo" href="home.html">Home</a></li>
+                <li><a class="navbar-link" href="cardapio.html">Cardápio</a></li>
+                <li><a class="navbar-link" href="cadastro.html">Pedir</a></li>
+                <li><a class="navbar-link" href="noticias.html">Notícias</a></li>
+                <li><a class="navbar-link" href="sobre.html">Sobre nós</a></li>
+                <li><a class="navbar-link" href="nossaslojas.html">Nossas lojas</a></li>
+                <li><a class="navbar-link" href="faleconosco.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        
+        <div id="carouselHome" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselHome" data-slide-to="1"></li>
+              <li data-target="#carouselHome" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/home/lancheporcao.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Título</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo impedit neque rerum consequatur</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/home/lancheporcao.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Título</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo impedit neque rerum consequatur</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/home/lancheporcao.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Título</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo impedit neque rerum consequatur</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="apresentacao">
+            <h1>Bem-vindo ao SpeedyBurger!!</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quae voluptas, 
+                reiciendis voluptatibus exercitationem nobis nihil, ipsam tempore impedit deserunt 
+                modi voluptate earum id iste omnis illo numquam temporibus amet!
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quae voluptas, 
+                reiciendis voluptatibus exercitationem nobis nihil, ipsam tempore impedit deserunt 
+                modi voluptate earum id iste omnis illo numquam temporibus amet!
+            </p>
+        </div>
     </main>
     <footer>
         <ul class="social">
@@ -38,9 +92,12 @@
             <li><a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
             <li><a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
             <li><a href="mailto:speedyburger@dominio.com"><i class="far fa-envelope"></i></a></li>
-            <li><a href=" https://api.whatsapp.com/send?phone=SpeedyBurger&text=Olá, desejo fazer um pedido!"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=SpeedyBurger&text=Olá, desejo fazer um pedido!"><i class="fab fa-whatsapp"></i></a></li>
         </ul>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="public/bootstrap40/js/bootstrap.min.js"></script>
 </body>
 </html>

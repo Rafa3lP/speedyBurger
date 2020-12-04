@@ -39,17 +39,7 @@
 }
 
 .local-btn {
-    background-color: #E81111;
     float: right;
-    border-radius: 2px;
-    color:#FFF;
-    padding: .5em 1em;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-.local-btn:hover {
-    background-color: #e72c2c;
 }
 
 @media screen and (max-width: 768px){

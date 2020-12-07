@@ -1,3 +1,7 @@
+hr {
+    clear: both;
+}
+
 .local {
     width: 85%;
     overflow: hidden;

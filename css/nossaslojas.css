@@ -1,6 +1,6 @@
 .local {
     width: 85%;
-    overflow: auto;
+    overflow: hidden;
     margin: 1em auto;
 }
 

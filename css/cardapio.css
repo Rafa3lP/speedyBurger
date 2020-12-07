@@ -118,6 +118,7 @@
     box-sizing: border-box;
     border: 1px solid #ccc;
     overflow: hidden;
+    box-shadow: 2px -2px 5px #bbb;
 }
 
 .card-img{
@@ -148,7 +149,7 @@
 }
 
 .card-price {
-    color: #0f0;
+    color: #2e912e;
     font-size: 1.3em;
     text-align: center;
 }

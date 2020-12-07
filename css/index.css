@@ -37,11 +37,20 @@ main {
     color: inherit;
 }
 
+.developer:hover .developer-name {
+    font-size: 1.2em;
+}
+
 .developer-img{
     vertical-align: middle;
     margin-right: 1em;
     width: 5em;
     border-radius: 50%;
+}
+
+.developer-name {
+    cursor: pointer;
+    transition: font-size .1s linear;
 }
 
 

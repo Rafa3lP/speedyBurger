@@ -1,4 +1,4 @@
-var btnMenu = document.querySelector(".nav-icon");
+var btnMenu = document.querySelector(".navbar-icon");
 var menu = document.querySelector("nav");
 
 btnMenu.addEventListener("click", function(e){
